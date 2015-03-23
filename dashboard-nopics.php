@@ -16,7 +16,7 @@ div.outter {		float:left;
 					margin: 5px;}  
 
 div.inner {			float:left;
-					height: 275px;
+//					height: 275px;
 					width: 160px;
 					padding-bottom: 20px;}  
 
@@ -34,7 +34,7 @@ div.outterarchive {	background: #BABABA;
 
 div.innerarchive {	background: #BABABA;
 					float:left; 
-					height: 275px;
+//					height: 275px;
 					width: 160px;}  
 
 img.MaxSized {		max-width: 150px;
@@ -119,7 +119,7 @@ if ($goal->slug == $mySlug) {
 		echo "Value: {$myPoint} \n <br>";
 		echo "Comment: {$myComment} \n <br>";
 		echo "<a href=\"https://www.beeminder.com/{$usr}/{$goal->slug}\" target=\"_blank\"><img class=\"MaxSized\" src=\"{$goal-> thumb_url}\" alt=\"{$goal->title}\"></a> \n <br>";
-		echo "</div>";
+				echo "</div>";
 	}
 }
 echo "</center></div>";
@@ -147,7 +147,7 @@ while ($cG < $countGroups) {
 				echo " <input type=\"submit\" value=\"Enter!\">";
 				echo "</form>";
 				echo "<a href=\"https://www.beeminder.com/{$usr}/{$goal->slug}\" target=\"_blank\"><img class=\"MaxSized\" src=\"{$goal-> thumb_url}\" alt=\"{$goal->title}\"></a> \n <br>";
-				echo "</div>";
+								echo "</div>";
 					}
 				}
 		echo "</center></div>";
@@ -172,7 +172,7 @@ foreach ($goals as $goal) {
 		echo " <input type=\"submit\" value=\"Enter!\">";
 		echo "</form>";
 		echo "<a href=\"https://www.beeminder.com/{$usr}/{$goal->slug}\" target=\"_blank\"><img class=\"MaxSized\" src=\"{$goal-> thumb_url}\" alt=\"{$goal->title}\"></a> \n <br>";
-		echo "</div>";
+				echo "</div>";
 	}
 }
 echo "</center></div>";
@@ -192,7 +192,7 @@ foreach ($goals as $goal) {
 		echo " <input type=\"submit\" value=\"Enter!\">";
 		echo "</form>";
 		echo "<a href=\"https://www.beeminder.com/{$usr}/{$goal->slug}\" target=\"_blank\"><img class=\"MaxSized\" src=\"{$goal-> thumb_url}\" alt=\"{$goal->title}\"></a> \n <br>";
-		echo "</div>";
+				echo "</div>";
 			}
 		}
 echo "</center></div>";
@@ -218,7 +218,7 @@ foreach ($goals as $goal) {
 		echo " <input type=\"submit\" value=\"Enter!\">";
 		echo "</form>";
 		echo "<a href=\"https://www.beeminder.com/{$usr}/{$goal->slug}\" target=\"_blank\"><img class=\"MaxSized\" src=\"{$goal-> thumb_url}\" alt=\"{$goal->title}\"></a> \n <br>";
-		echo "</div>";
+				echo "</div>";
 	}
 }
 echo "</center></div>";
@@ -240,7 +240,7 @@ foreach ($goals as $goal) {
 		echo " <input type=\"submit\" value=\"Enter!\">";
 		echo "</form>";
 		echo "<a href=\"https://www.beeminder.com/{$usr}/{$goal->slug}\" target=\"_blank\"><img class=\"MaxSized\" src=\"{$goal-> thumb_url}\" alt=\"{$goal->title}\"></a> \n <br>";
-		echo "</div>";
+				echo "</div>";
 	}
 }
 echo "</center></div>";
@@ -255,7 +255,7 @@ foreach ($goals as $goal) {
 		) {
 		echo "<div class=\"innerarchive\">";
 		echo "<b> {$goal->title}</b> \n <br>";
-		echo "{$goal->L/Cimsum} \n <br>";
+		echo "{$goal->limsum} \n <br>";
 		echo "<form method=\"POST\" action=\"dashboard.php\">";
 		echo "<input type=\"hidden\" name=\"theSlug\" value=\"{$goal->slug}\">";
 		echo "<input type=\"text\" name=\"myPoint\" />";
@@ -263,7 +263,7 @@ foreach ($goals as $goal) {
 		echo " <input type=\"submit\" value=\"Enter!\">";
 		echo "</form>";
 		echo "<a href=\"https://www.beeminder.com/{$usr}/{$goal->slug}\" target=\"_blank\"><img class=\"MaxSized\" src=\"{$goal-> thumb_url}\" alt=\"{$goal->title}\"></a> \n <br>";
-		echo "</div>";
+				echo "</div>";
 			}
 		}
 	echo "</center></div>";
