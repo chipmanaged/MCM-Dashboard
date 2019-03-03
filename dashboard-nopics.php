@@ -89,9 +89,9 @@ include 'settings-umbrellas.php';
 	$countAver = 0;
 	$Yesterday = $startToday - (24 * 60 * 60);
 // Data Entry
-	$mySlug = $_POST[theSlug];
-	$myPoint = $_POST[myPoint];
-	$myComment = $_POST[myComment];
+	$mySlug = $_POST['theSlug'];
+	$myPoint = $_POST['myPoint'];
+	$myComment = $_POST['myComment'];
 	$enterPoint = $myPoint;
 
 // ENTER RECENT DATAPOINT
